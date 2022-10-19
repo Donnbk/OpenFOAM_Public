@@ -1,10 +1,12 @@
 ## How to install from OpenFOAM.com: [Guide video](https://www.youtube.com/watch?v=CeEJS1eT9NE) 
 
-## Fix error: The repo is not longer signed (OpenFOAM.com)
-- Edit the corresponding line in /etc/apt/sources.list: ([Source:](https://www.cfd-online.com/Forums/openfoam-installation/243709-repo-not-longer-signed-openfoam-com.html))
+### Fix error: The repo is not longer signed (OpenFOAM.com)
+- Edit the corresponding line in /etc/apt/sources.list ([Source](https://www.cfd-online.com/Forums/openfoam-installation/243709-repo-not-longer-signed-openfoam-com.html))
+```
 deb [arch=amd64 trusted=yes] https://dl.openfoam.com/repos/deb bionic main
+```
 
-## How to install ParaView: [Video](https://www.youtube.com/watch?v=tWEGjWD8d2M)
+## How to install ParaView: [Guide Video](https://www.youtube.com/watch?v=tWEGjWD8d2M)
 - In Terminal:
 ```bash
 sudo gedit ~/.bashrc
