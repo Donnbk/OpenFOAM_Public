@@ -39,3 +39,7 @@ Name=New Window
 Exec=paraview
 TargetEnvironment=Unity
 ```
+## Reference:
+- OpenFOAM.com: https://www.openfoam.com/
+- Paraview: https://www.paraview.org/download/
+- CFD Online: https://www.cfd-online.com/
