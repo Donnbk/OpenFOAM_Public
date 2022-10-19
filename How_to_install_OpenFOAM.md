@@ -1,21 +1,30 @@
-+ How to install from OpenFOAM.com: https://www.youtube.com/watch?v=CeEJS1eT9NE 
+## How to install from OpenFOAM.com: [Guide video](https://www.youtube.com/watch?v=CeEJS1eT9NE) 
 
-+ Fix error: The repo is not longer signed (OpenFOAM.com)
-Edit the corresponding line in /etc/apt/sources.list : 
+## Fix error: The repo is not longer signed (OpenFOAM.com)
+### Edit the corresponding line in /etc/apt/sources.list : 
 deb [arch=amd64 trusted=yes] https://dl.openfoam.com/repos/deb bionic main
-(Source: https://www.cfd-online.com/Forums/openfoam-installation/243709-repo-not-longer-signed-openfoam-com.html)
+([Source:](https://www.cfd-online.com/Forums/openfoam-installation/243709-repo-not-longer-signed-openfoam-com.html))
 
-+ Install ParaView: https://www.youtube.com/watch?v=tWEGjWD8d2M
+## How to install ParaView: [Guide video](https://www.youtube.com/watch?v=tWEGjWD8d2M)
 
-[Terminal]$ sudo gedit ~/.bashrc
-=> Type this code line: 
+```bash
+sudo gedit ~/.bashrc
+```
+- Type this code line in .bashrc file: 
+```
 export PATH=$PATH:/opt/ParaView-5.9/bin
+```
 
-[Terminal]$ sudo ln -s /opt/ParaView-5.8/bin/paraview /usr/bin/paraview
-[Terminal]$ sudo ln -s /opt/ParaView-5.8/lib/paraview-5.8/ /usr/bin/paraview-5.8
+```bash
+sudo ln -s /opt/ParaView-5.8/bin/paraview /usr/bin/paraview
+sudo ln -s /opt/ParaView-5.8/lib/paraview-5.8/ /usr/bin/paraview-5.8
+```
 
-[Terminal]$ sudo gedit /usr/share/applications/paraview.desktop
-=> Type this code lines:
+```bash
+sudo gedit /usr/share/applications/paraview.desktop
+```
+- Type this code lines in paraview.desktop file:
+```
 [Desktop Entry]
 Version=1.0
 Name=Paraview 5.8
@@ -28,4 +37,4 @@ x-Ayatana-Desktop-Shortcuts=NewWindow
 Name=New Window
 Exec=paraview
 TargetEnvironment=Unity
-
+```
