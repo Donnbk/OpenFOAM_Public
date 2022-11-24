@@ -13,7 +13,7 @@ sudo gedit ~/.bashrc
 ```
 - Type this code line in .bashrc file: 
 ```
-export PATH=$PATH:/opt/ParaView-5.9/bin
+export PATH=$PATH:/opt/ParaView-5.8/bin
 ```
 - In Terminal:
 ```bash
